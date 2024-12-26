@@ -4,6 +4,7 @@ import { CreditCard } from "@medusajs/icons"
 import Ideal from "@modules/common/icons/ideal"
 import Bancontact from "@modules/common/icons/bancontact"
 import PayPal from "@modules/common/icons/paypal"
+import Shaparak from "@modules/common/icons/shaparak"
 
 /* Map of payment provider_id to their title and icon. Add in any payment providers you want to use. */
 export const paymentInfoMap: Record<
@@ -21,6 +22,10 @@ export const paymentInfoMap: Record<
   "pp_stripe-bancontact_stripe": {
     title: "Bancontact",
     icon: <Bancontact />,
+  },
+  "pp_shaparak-payment_shaparak-payment":{
+    title: "شاپرک",
+    icon: <Shaparak />,
   },
   pp_paypal_paypal: {
     title: "PayPal",
@@ -65,4 +70,5 @@ export const noDivisionCurrencies = [
   "xag",
   "xdr",
   "xau",
+  "irr"
 ]
